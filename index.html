@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
 </head>
+
 <body>
+    <h2 class="results">0</h2>
     <div>
-        0
-    </div>
-    <div>
-        <form action="">
+        <form id="calc-form">
             <label for="operations">Choose a operation:</label>
             <select name="operations">
                 <option value="add">+</option>
@@ -19,12 +19,15 @@
                 <option value="multiply">*</option>
                 <option value="divide">/</option>
             </select>
-            <br/><br/>
+            <br /><br />
             <label for="valueToOperate">Type a number:</label>
             <input name="valueToOperate" type="number">
-            <br/><br/>
+            <br /><br />
             <input type="submit">
         </form>
+        <button id="reset-btn">reset</button>
     </div>
+    <script type="text/javascript" src="main.js"></script>
 </body>
+
 </html>
